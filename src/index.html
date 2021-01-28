@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Urban App</title>
+  </head>
+  <body>
+    <button class="mui-btn mui-btn--fab mui-btn--primary floating-btn-log" id="auth-btn"><strong>LogIn</strong></button>
+    <button class="mui-btn mui-btn--fab mui-btn--accent floating-btn-reg" id="register-btn"><strong>SignUp</strong></button>
+    <div id="sidebar" class="sidebar">
+      <div class="mui--text-white mui--text-display1 mui--align-vertical">
+        Urban Renew App
+      </div>
+    </div>
+    <div id="content" class="mui-container-fluid">
+      <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+          <br>
+          <br>
+          <div class="mui--text-black-54 mui--text-body2"><i>Urban Transformation Project</i></div>
+          <div class="mui-divider"></div>
+          <br>
+          <div class="mui--text-headline">Goal of the project</div>
+          <br>
+          <div class="mui--text-black-54">
+            <p>The goal of the project is to create conditions for the systematic improvement of the quality and comfort of the urban environment based on requests and initiatives of residents.</p>
+            <p> Landscaped parks, bike paths, lighted streets, pedestrian zones - all this should be in any city. Only in this case people will like to live and work there. This is the approach laid down in the priority project <strong><i>"Urban Transformation Project"</i></strong>.
+            </p>
+            <p>You can view all suggestions:<button class="mui-btn mui-btn--small mui-btn--flat mui-btn--primary" type="button" id="link-btn"><strong>here...</strong></button></p>    
+          </div>
+          <br>
+          <br>
+          <div class="mui--text-black-54 mui--text-body2"><i>Participate</i></div>
+          <div class="mui-divider"></div>
+          <br>
+          <div class="mui--text-headline">How to add suggestion</div>
+          <br>
+          <div class="mui--text-black-54">
+            <ul>
+              <li>Click the LogIn button to log into an existing one or SignUp button to create an account</li>
+              <li>Formulate your suggestion for improving the urban environment</li>
+              <li>Сlick the submit button to send the suggestion to the project site</li>
+            </ul>    
+          </div>
+          <br>
+          <form class="mui-form" id="form">
+            <legend>Add Suggestion</legend>
+            <div class="mui-textfield mui-textfield--float-label">
+              <input
+              type="text"
+              id="suggestion-input"
+              required
+              minlength="10"
+              maxlength="256"
+              disabled
+              >
+              <label for="suggestion-input">write your suggestion here</label>
+            </div>
+            <button
+              type="submit"
+              id="submit"
+              class="mui-btn mui-btn--raised mui-btn--primary"
+              disabled
+            >
+              Submit
+            </button>
+          </form>
+          <br>
+          <div class="mui-panel">
+            <div class="mui--text-black-54 mui--text-title"><i>Your suggestions:</i></div>
+          </div>
+          <div id="list"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
